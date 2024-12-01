@@ -1,0 +1,125 @@
+<div class="w-full max-w-sm">
+  <form
+    class="mb-4 rounded bg-white px-8 pb-8 pt-6 shadow-md"
+    [formGroup]="registrationForm"
+    (ngSubmit)="onSubmit()"
+  >
+    <h2 class="mb-2" i18n>Registration</h2>
+
+    <div class="mb-4">
+      <app-input
+        class="mb-2"
+        [control]="registrationForm.controls.username"
+        label="Username"
+      >
+        @if (usernameCheckIsLoading()) {
+          <app-spinner></app-spinner>
+        }
+      </app-input>
+
+      <!-- Feedback disponibilità username -->
+      @if (
+        {
+          loading: usernameCheckIsLoading(),
+          val: registrationForm.controls.username.value,
+          availability: usernameAvailability$ | async,
+        };
+        as obj
+      ) {
+        @if (obj.val && !obj.loading && obj.availability != null) {
+          @if (obj.availability.status === "success") {
+            <p class="text-xs italic text-green-500" i18n>
+              Username available!
+            </p>
+          } @else {
+            <p class="text-xs italic text-red-500">
+              {{ obj.availability.error_message }}
+            </p>
+          }
+        }
+      }
+    </div>
+
+    <div class="mb-4">
+      <app-input
+        [control]="registrationForm.controls.password"
+        label="Password"
+        type="password"
+        autocomplete="new-password"
+      ></app-input>
+    </div>
+
+    <div class="mb-4">
+      <app-input
+        [control]="registrationForm.controls.firstName"
+        label="Nome"
+      ></app-input>
+    </div>
+
+    <div class="mb-4">
+      <app-input
+        [control]="registrationForm.controls.lastName"
+        label="Cognome"
+      ></app-input>
+    </div>
+
+    <div
+      class="mb-4"
+      [class]="
+        registrationForm.touched && registrationForm.invalid
+          ? 'visible'
+          : 'invisible'
+      "
+    >
+      <p class="text-sm italic text-red-500">
+        @if (
+          registrationForm.controls.username.touched &&
+          registrationForm.controls.username.hasError("required")
+        ) {
+          <span i18n>Username is required</span>
+        } @else if (
+          registrationForm.controls.password.touched &&
+          registrationForm.controls.password.hasError("required")
+        ) {
+          <span i18n>Password is required</span>
+        } @else if (
+          registrationForm.controls.firstName.touched &&
+          registrationForm.controls.firstName.hasError("required")
+        ) {
+          <span i18n>First name is required</span>
+        } @else if (
+          registrationForm.controls.lastName.touched &&
+          registrationForm.controls.lastName.hasError("required")
+        ) {
+          <span i18n>Last name is required</span>
+        }
+      </p>
+    </div>
+
+    @if (registrationSuccess()) {
+      <p class="mb-4">
+        <span
+          class="inline-block bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 bg-clip-text font-bold text-transparent"
+          i18n
+        >
+          Registration successful!
+        </span>
+      </p>
+    }
+
+    <div class="flex items-center justify-between">
+      <app-button
+        type="submit"
+        [disabled]="!registrationForm.touched || registrationForm.invalid"
+      >
+        @if (registrationSuccess()) {
+          <app-spinner></app-spinner>
+        } @else {
+          <span i18n>Sign up</span>
+        }
+      </app-button>
+
+      <app-link to="/login" i18n>Back to login</app-link>
+    </div>
+  </form>
+</div>

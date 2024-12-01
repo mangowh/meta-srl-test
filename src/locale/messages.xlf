@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en-US">
+  <file id="ngi18n" original="ng.template">
+    <unit id="6575164270960732036">
+      <notes>
+        <note category="location">src/app/components/pagination/pagination.component.html:12,13</note>
+      </notes>
+      <segment>
+        <source> Previous </source>
+      </segment>
+    </unit>
+    <unit id="3971100408152984961">
+      <notes>
+        <note category="location">src/app/components/pagination/pagination.component.html:21,22</note>
+      </notes>
+      <segment>
+        <source> Next </source>
+      </segment>
+    </unit>
+    <unit id="3313305464759255603">
+      <notes>
+        <note category="location">src/app/components/pagination/pagination.component.html:29,30</note>
+      </notes>
+      <segment>
+        <source>Showing</source>
+      </segment>
+    </unit>
+    <unit id="3207050836358092212">
+      <notes>
+        <note category="location">src/app/components/pagination/pagination.component.html:31,32</note>
+      </notes>
+      <segment>
+        <source>to</source>
+      </segment>
+    </unit>
+    <unit id="5881876145178332550">
+      <notes>
+        <note category="location">src/app/components/pagination/pagination.component.html:33,34</note>
+      </notes>
+      <segment>
+        <source>of</source>
+      </segment>
+    </unit>
+    <unit id="1338297011053827475">
+      <notes>
+        <note category="location">src/app/components/pagination/pagination.component.html:35,36</note>
+      </notes>
+      <segment>
+        <source>results</source>
+      </segment>
+    </unit>
+    <unit id="4452427314943113135">
+      <notes>
+        <note category="location">src/app/components/pagination/pagination.component.html:48,49</note>
+      </notes>
+      <segment>
+        <source>Previous</source>
+      </segment>
+    </unit>
+    <unit id="3885497195825665706">
+      <notes>
+        <note category="location">src/app/components/pagination/pagination.component.html:83,84</note>
+      </notes>
+      <segment>
+        <source>Next</source>
+      </segment>
+    </unit>
+    <unit id="1385290792914374332">
+      <notes>
+        <note category="location">src/app/pages/home/home.component.html:3,5</note>
+      </notes>
+      <segment>
+        <source>Star Wars Planets</source>
+      </segment>
+    </unit>
+    <unit id="9209781328340965816">
+      <notes>
+        <note category="location">src/app/pages/home/home.component.html:11,12</note>
+        <note category="description">Filter placeholder</note>
+      </notes>
+      <segment>
+        <source>Filter...</source>
+      </segment>
+    </unit>
+    <unit id="8616321500420342356">
+      <notes>
+        <note category="location">src/app/pages/home/home.component.html:32,33</note>
+      </notes>
+      <segment>
+        <source>Invalid value</source>
+      </segment>
+    </unit>
+    <unit id="4898428636303568282">
+      <notes>
+        <note category="location">src/app/pages/home/home.component.html:37,38</note>
+      </notes>
+      <segment>
+        <source>An error occured, please reload the page</source>
+      </segment>
+    </unit>
+    <unit id="7839102902838664367">
+      <notes>
+        <note category="location">src/app/pages/home/home.component.html:44,45</note>
+      </notes>
+      <segment>
+        <source>No results</source>
+      </segment>
+    </unit>
+    <unit id="4467323362722952678">
+      <notes>
+        <note category="location">src/app/pages/home/home.component.html:54,55</note>
+        <note category="location">src/app/pages/home/home.component.html:64,65</note>
+        <note category="location">src/app/pages/home/home.component.html:72,73</note>
+        <note category="location">src/app/pages/home/home.component.html:80,81</note>
+      </notes>
+      <segment>
+        <source>Unknown</source>
+      </segment>
+    </unit>
+    <unit id="1465150981029153833">
+      <notes>
+        <note category="location">src/app/pages/home/home.component.html:60,61</note>
+      </notes>
+      <segment>
+        <source>Population</source>
+      </segment>
+    </unit>
+    <unit id="5567595061783150810">
+      <notes>
+        <note category="location">src/app/pages/home/home.component.html:68,69</note>
+      </notes>
+      <segment>
+        <source>Diameter</source>
+      </segment>
+    </unit>
+    <unit id="4506743314224153291">
+      <notes>
+        <note category="location">src/app/pages/home/home.component.html:76,77</note>
+      </notes>
+      <segment>
+        <source>Terrain</source>
+      </segment>
+    </unit>
+    <unit id="7873048973962592071">
+      <notes>
+        <note category="location">src/app/pages/home/home.component.html:86,87</note>
+      </notes>
+      <segment>
+        <source>Appears in</source>
+      </segment>
+    </unit>
+    <unit id="2483968112050675767">
+      <notes>
+        <note category="location">src/app/pages/home/home.component.html:103,104</note>
+      </notes>
+      <segment>
+        <source>No movie</source>
+      </segment>
+    </unit>
+    <unit id="2454050363478003966">
+      <notes>
+        <note category="location">src/app/pages/login/login.component.html:7,9</note>
+      </notes>
+      <segment>
+        <source>Login</source>
+      </segment>
+    </unit>
+    <unit id="5554528553553249088">
+      <notes>
+        <note category="location">src/app/pages/login/login.component.html:33,34</note>
+      </notes>
+      <segment>
+        <source>Show password</source>
+      </segment>
+    </unit>
+    <unit id="7378463896756839810">
+      <notes>
+        <note category="location">src/app/pages/login/login.component.html:47,48</note>
+      </notes>
+      <segment>
+        <source>Missing or invalid username</source>
+      </segment>
+    </unit>
+    <unit id="2907863985687146258">
+      <notes>
+        <note category="location">src/app/pages/login/login.component.html:52,53</note>
+      </notes>
+      <segment>
+        <source>Missing or invalid password</source>
+      </segment>
+    </unit>
+    <unit id="4998266049903241768">
+      <notes>
+        <note category="location">src/app/pages/login/login.component.html:57,58</note>
+      </notes>
+      <segment>
+        <source>Wrong credentials</source>
+      </segment>
+    </unit>
+    <unit id="5207635742003539443">
+      <notes>
+        <note category="location">src/app/pages/login/login.component.html:70,71</note>
+      </notes>
+      <segment>
+        <source>Sign in</source>
+      </segment>
+    </unit>
+    <unit id="7028204981963450021">
+      <notes>
+        <note category="location">src/app/pages/login/login.component.html:74</note>
+        <note category="location">src/app/pages/registration/registration.component.html:118,119</note>
+      </notes>
+      <segment>
+        <source>Sign up</source>
+      </segment>
+    </unit>
+    <unit id="8298333184054476827">
+      <notes>
+        <note category="location">src/app/pages/registration/registration.component.html:7,9</note>
+      </notes>
+      <segment>
+        <source>Registration</source>
+      </segment>
+    </unit>
+    <unit id="943839771304871130">
+      <notes>
+        <note category="location">src/app/pages/registration/registration.component.html:32</note>
+      </notes>
+      <segment>
+        <source> Username available! </source>
+      </segment>
+    </unit>
+    <unit id="3702338872876040900">
+      <notes>
+        <note category="location">src/app/pages/registration/registration.component.html:79,80</note>
+      </notes>
+      <segment>
+        <source>Username is required</source>
+      </segment>
+    </unit>
+    <unit id="205044832662301680">
+      <notes>
+        <note category="location">src/app/pages/registration/registration.component.html:84,85</note>
+      </notes>
+      <segment>
+        <source>Password is required</source>
+      </segment>
+    </unit>
+    <unit id="6407628057642629970">
+      <notes>
+        <note category="location">src/app/pages/registration/registration.component.html:89,90</note>
+      </notes>
+      <segment>
+        <source>First name is required</source>
+      </segment>
+    </unit>
+    <unit id="5005290836214172506">
+      <notes>
+        <note category="location">src/app/pages/registration/registration.component.html:94,95</note>
+      </notes>
+      <segment>
+        <source>Last name is required</source>
+      </segment>
+    </unit>
+    <unit id="2486309149676889893">
+      <notes>
+        <note category="location">src/app/pages/registration/registration.component.html:105,106</note>
+      </notes>
+      <segment>
+        <source> Registration successful! </source>
+      </segment>
+    </unit>
+    <unit id="7420623990150183817">
+      <notes>
+        <note category="location">src/app/pages/registration/registration.component.html:122</note>
+      </notes>
+      <segment>
+        <source>Back to login</source>
+      </segment>
+    </unit>
+  </file>
+</xliff>

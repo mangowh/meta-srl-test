@@ -1,0 +1,77 @@
+<div class="w-full max-w-sm">
+  <form
+    class="mb-4 rounded bg-white px-8 pb-8 pt-6 shadow-md"
+    [formGroup]="loginForm"
+    (ngSubmit)="onSubmit()"
+  >
+    <h2 class="mb-2" i18n>Login</h2>
+
+    <div class="mb-4">
+      <app-input
+        [control]="loginForm.controls.username"
+        label="Username"
+        autocomplete="username"
+      ></app-input>
+    </div>
+
+    <div class="mb-4">
+      <app-input
+        [control]="loginForm.controls.password"
+        label="Password"
+        [type]="showPassword ? 'text' : 'password'"
+        autocomplete="current-password"
+      ></app-input>
+
+      <div class="mt-4 flex select-none items-center gap-1">
+        <input
+          id="show-password-checkbox"
+          type="checkbox"
+          (change)="showPassword = !showPassword"
+          class="h-4 w-4 cursor-pointer rounded border-gray-300 bg-gray-100"
+        />
+        <label class="cursor-pointer text-sm" for="show-password-checkbox" i18n
+          >Show password</label
+        >
+      </div>
+    </div>
+
+    <div
+      class="mb-4 h-4"
+      [class]="loginForm.touched && loginForm.invalid ? 'visible' : 'invisible'"
+    >
+      <p class="text-sm italic text-red-500">
+        @if (
+          loginForm.controls.username.touched &&
+          loginForm.controls.username.hasError("required")
+        ) {
+          <span i18n>Missing or invalid username</span>
+        } @else if (
+          loginForm.controls.password.touched &&
+          loginForm.controls.password.hasError("required")
+        ) {
+          <span i18n>Missing or invalid password</span>
+        } @else if (
+          loginForm.controls.username.touched &&
+          loginForm.controls.password.touched
+        ) {
+          <span i18n>Wrong credentials</span>
+        }
+      </p>
+    </div>
+
+    <div class="flex items-center justify-between">
+      <app-button
+        type="submit"
+        [disabled]="!loginForm.touched || loginForm.invalid"
+      >
+        @if (signInIsLoading()) {
+          <app-spinner></app-spinner>
+        } @else {
+          <span i18n>Sign in</span>
+        }
+      </app-button>
+
+      <app-link to="/registration" i18n>Sign up</app-link>
+    </div>
+  </form>
+</div>

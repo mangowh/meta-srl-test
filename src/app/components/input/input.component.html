@@ -1,0 +1,28 @@
+@if (label(); as label) {
+  <label class="mb-2 block text-sm font-bold text-gray-700" [for]="id">
+    {{ label }}
+  </label>
+}
+
+<div class="relative" [class]="innerClass()">
+  <input
+    class="focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow transition-colors focus:outline-none"
+    [id]="id"
+    type="text"
+    [formControl]="control()"
+    [ngClass]="{
+      'border-red-500': control().touched && control().errors,
+    }"
+    [placeholder]="placeholder()"
+    [type]="type()"
+    [autocomplete]="autocomplete()"
+    tabIndex="0"
+    autofocus
+  />
+
+  <div
+    class="absolute right-0 top-0 flex h-full w-10 items-center justify-center"
+  >
+    <ng-content></ng-content>
+  </div>
+</div>
